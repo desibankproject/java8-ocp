@@ -12,6 +12,7 @@ public class Booster {
 	public class Jocker{
 		int i=900;
 		final int m=400;
+		//static int poo=2*3;
 		int b=909090;
 		//The field opo cannot be declared static in a non-static inner type, 
 		//unless initialized with a constant expression

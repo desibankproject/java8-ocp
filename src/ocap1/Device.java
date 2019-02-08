@@ -4,7 +4,6 @@ import java.io.IOException;
 
 public class Device implements AutoCloseable {
 	String header = null;
-
 	public void open() throws IOException {
 		header = "OPENED";
 		System.out.println("DeviceOpened");
@@ -26,5 +25,4 @@ public class Device implements AutoCloseable {
 			throw new Exception("test");
 		}
 	}
-
 }
