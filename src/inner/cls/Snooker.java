@@ -10,6 +10,7 @@ public class Snooker {
 		private int go=30;
 		static int foo=897;
 		static int games=40;
+		final int m=400;
 		void blast(){
 			//Cannot make a static reference to the non-static field o
 			//System.out.println("o = "+o);
