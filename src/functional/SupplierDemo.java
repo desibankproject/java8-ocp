@@ -8,9 +8,12 @@ public class SupplierDemo {
 	            return new Person("Varun", 30, "Programmer");
 	        };*/
 	        
-			//Supplier<Person> supplier=()->new Person("Varun", 30, "Programmer");
-			Supplier<Person> supplier=Person::new;
+			Supplier<Person> supplier=()->new Person("Varun", 30, "Programmer");
+			//Supplier<Person> supplier=Person::new;
 	        Person p = supplier.get();
 	        System.out.println(p);
+	        
+	        CustomSupplier<Person> customSupplier=Person::new;
+	        System.out.println(customSupplier.get("Nagendra",22, "Rajnagar"));
 	}
 }

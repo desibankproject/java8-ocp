@@ -25,6 +25,12 @@ class Customer {
 		System.out.println("email= "+email);
 	}
 	
+	public void print(String salutation,String color){
+		System.out.println("name= "+name);
+		System.out.println("email= "+email);
+		System.out.println("color = "+color);
+	}
+	
 	public Customer(String name, String email) {
 		this.name = name;
 		this.email = email;

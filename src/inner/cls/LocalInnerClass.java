@@ -1,5 +1,7 @@
 package inner.cls;
-
+ enum Directions {
+    NORTH, WEST, SOUTH, EAST
+}
 public class LocalInnerClass {
 	int mocker=800;	
 	static int jai=700;	
@@ -11,6 +13,7 @@ public class LocalInnerClass {
 			//g=12; =>>Local variable g defined in an enclosing scope must be final or effectively final
 			class Jocker{
 				int mo=90;
+				private final static int p=10*71;
 				void show(){
 					System.out.println("mo = "+mo);
 					System.out.println("g = "+g);

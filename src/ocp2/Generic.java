@@ -5,6 +5,6 @@ public class Generic<T> {
 		 	 //Generic<String> g = new Generic<?>();
 			 Generic<String> g = new Generic<String>();
 			 Generic<?> g1 = new Generic<String>();
-			 Generic<Object> g2 = new Generic();
+			 Generic<Integer> g2 = new Generic();
 	}
 }
