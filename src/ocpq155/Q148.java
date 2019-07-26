@@ -19,8 +19,9 @@ public class Q148 {
 		fly(() -> new Bird());
 		fly(Penguin::new);
 	}
-	 static void fly (Supplier<Bird> bird) {
-		 bird.get().fly();
+	 static void fly (Supplier<? extends Bird> supplier) {
+		 supplier.get().fly();
 	 }
+	 
 	/* line n1 */
 }
