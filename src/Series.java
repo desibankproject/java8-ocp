@@ -7,7 +7,7 @@ public class Series {
 			   int i=8;	
     			while(i<=var);
 	   			System.out.println(i++);
-	   			Files.createDirectory(dir, attrs)
+	   		//	Files.createDirectory(dir, attrs)
 		   }
 	}
 }

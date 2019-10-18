@@ -6,14 +6,13 @@ import java.util.concurrent.Callable;
 
 
 public class Test  implements Callable<Integer>{
-	AutoCloseable
 	public static void main(String[] args) {
 	}
 	
 	public void execute(){
 	      try {
 	    	  
-	      } catch (FileNotFoundException e) {
+	      } catch (Exception e) {
 			e.printStackTrace();
 	      }finally{
 	    	  

@@ -9,8 +9,8 @@ public class Q6 {
 	public static void main(String[] args) {
 		Path path = Paths.get("D:/duy");
 		try {
-			Files.find(start, maxDepth, matcher, options)(path).forEach(System.out::println);
-		} catch (IOException e) {
+			//Files.find(start, maxDepth, matcher, options)(path).forEach(System.out::println);
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} // w2

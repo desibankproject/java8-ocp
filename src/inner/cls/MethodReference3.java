@@ -6,7 +6,6 @@ import java.util.List;
 
 public class MethodReference3 {
 	 public static void main(String[] args) {
-		Collections
 	 /*FunctionCar carpack=(Customer customer,String sal) -> {
 		customer.print(sal);
 	 };*/

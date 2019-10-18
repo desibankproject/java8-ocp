@@ -1,6 +1,5 @@
 package ocp4;
 
-package ocp4;
 
 import java.util.function.*;
 

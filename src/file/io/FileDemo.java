@@ -5,7 +5,6 @@ import java.io.InputStream;
 
 public class FileDemo {
 	public static void main(String[] args) {
-		Path
 		File file=new File("D:/HelloMe.java");
 		if(file.exists()){
 			System.out.println("@)@)@Yes it is there!!??");

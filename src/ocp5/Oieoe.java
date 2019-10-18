@@ -3,8 +3,8 @@ package ocp5;
 public class Oieoe {
 	
 	public static void main(String[] args) {
-		int result=chain(80);
-		System.out.println(result);
+		//int result=chain(80);
+		//System.out.println(result);
 	}
 	
 		private int addPlusOne(int a, int b) {

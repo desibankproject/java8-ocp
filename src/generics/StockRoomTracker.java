@@ -12,6 +12,5 @@ import java.util.stream.Stream;
 public class StockRoomTracker {
 
 	public static void main(String[] args) {
-		BasicFileAttributeView
 	}
 }

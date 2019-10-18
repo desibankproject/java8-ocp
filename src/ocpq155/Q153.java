@@ -11,11 +11,12 @@ class Vehicle{
 class Car extends Vehicle{
 	String trans;
 	public Car(String trans){ //line1
+		super("@",12);
 		this.trans=trans;
 	}
 	public Car(String type, int maxSpeed, String trans) {
 		super(type, maxSpeed);
-		this(trans);//line2
+		//this(trans);//line2
 	}
 }
 public class Q153 {
