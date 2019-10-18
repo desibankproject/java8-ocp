@@ -9,6 +9,8 @@ public class Android {
 		supplier.get();
 	}
 
+	
+	
 	public static void main(String... electricSheep) {
 		Supplier<Integer> supplier = () -> 100;
 		Android data = new Android();

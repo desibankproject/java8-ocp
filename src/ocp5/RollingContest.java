@@ -1,5 +1,8 @@
 package ocp5;
 
+import java.util.function.Consumer;
+import java.util.function.Supplier;
+
 class Roller<E extends Wheel>  {
     public void roll(E e) { }
 }
@@ -12,4 +15,6 @@ class CartWheel extends Wheel {  }
    Roller<? extends Wheel> wheel4 =new Roller<Wheel>();
 	/* Roller<? super Wheel> wheel5 =new Roller<CartWheel>(); */
    Roller<? super Wheel> wheel6 =new Roller<Wheel>();
-}
+ 
+   Supplier<T>
+ }
