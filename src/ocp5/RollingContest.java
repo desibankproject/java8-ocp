@@ -15,6 +15,4 @@ class CartWheel extends Wheel {  }
    Roller<? extends Wheel> wheel4 =new Roller<Wheel>();
 	/* Roller<? super Wheel> wheel5 =new Roller<CartWheel>(); */
    Roller<? super Wheel> wheel6 =new Roller<Wheel>();
- 
-   Supplier<T>
  }
