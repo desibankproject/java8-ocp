@@ -9,7 +9,7 @@ public class PeekStreamExample {
 				 filter(e -> e.length() > 3)  //Stream<String>
 				.peek(e -> System.out.println("Filtered value: " + e)) ////Stream<String>
 				.map(String::toUpperCase) ////Stream<String> ->>All String in caps
-				.peek(e -> System.out.println("Mapped value: " + e))
-				.collect(Collectors.toList());
+				.peek(e -> System.out.println("Mapped value: " + e))//Stream<String>
+				.collect(Collectors.toList());  //List<String>
 	}
 }
