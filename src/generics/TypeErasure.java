@@ -14,6 +14,7 @@ public class TypeErasure {
 		strings.add("10");//Integer
 		strings.add("100");
 		strings.add("1000");
+		//strings.add(299);
 		
 		System.out.println(numbers.getClass());
 		System.out.println(strings.getClass());

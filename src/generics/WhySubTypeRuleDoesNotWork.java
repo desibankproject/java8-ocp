@@ -19,12 +19,28 @@ public class WhySubTypeRuleDoesNotWork {
 		cars.add(car1);
 		cars.add(car2);
 		
+		List<Robot> robots=new ArrayList<Robot>();
+		Robot robot=new Robot();
+		robot.setColor("white");
+		robot.setFuelType("petrol");
+		robot.setPrice(1233);
+		robots.add(robot);
 		//print(cars);
+		//print(robots);
 		//List<Vehicle> oeoe=new ArrayList<Car>();
+		List<Vehicle> vehicles=new ArrayList<Vehicle>();
+		Vehicle vehicle=new Vehicle();
+		vehicle.setColor("white");
+		vehicle.setFuelType("petrol");
+		vehicle.setPrice(1233);
+		vehicles.add(vehicle);
+		print(vehicles);
 	}
 	
-	static public void print(List<Vehicle> vehicles){//Arr
-	
+	static public void print(List<Vehicle> vehicles){//Arr // vehicles can refer only List of Vehicle not any subclass of it
+		for(Vehicle vehicle:vehicles) {
+			System.out.println(vehicle);
+		}
 	}
 
 }
