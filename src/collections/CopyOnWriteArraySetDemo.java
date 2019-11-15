@@ -2,10 +2,13 @@ package collections;
 
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
+import java.util.stream.Stream;
 
 public class CopyOnWriteArraySetDemo {
 	
 	public static void main(String[] args) {
+		
+		Stream<T>
 		 // create object of CopyOnWriteArrayList 
 	    Set<Integer> arraySet   = new CopyOnWriteArraySet<Integer>(); 
 	    // Add elements 

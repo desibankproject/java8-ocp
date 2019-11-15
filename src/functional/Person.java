@@ -9,7 +9,12 @@ public class Person {
 	private String name;
 	private int age;
 	private String address;
-	
+	public Person(Person person){
+		this.name="Jhon";
+		this.age=20;
+		this.address="CA100";
+	}
+
 	public Person(){
 		this.name="Jhon";
 		this.age=20;

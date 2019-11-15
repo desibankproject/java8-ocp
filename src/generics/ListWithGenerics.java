@@ -15,7 +15,7 @@ public class ListWithGenerics {
 		// TODO Auto-generated method stub
 		//generics works only for the compiler
 		List<String> list=new ArrayList<>();//this is called type inference - JAVA 7 and onwards
-		list.add("String");
+		list.add("I want to eat apple!");
 		/*list.add(1222);
 		list.add(102.2);
 		list.add(new Dog());*/

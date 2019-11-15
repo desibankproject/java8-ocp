@@ -15,7 +15,7 @@ class Jocker {
 	public  int sum(int x,int y){
 		return x+y;
 	}
-	public  int jack(int x,int y){
+	 public  int jack(int x,int y){
 		return x-y;
 	}
 }

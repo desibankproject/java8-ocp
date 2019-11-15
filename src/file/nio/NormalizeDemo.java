@@ -14,7 +14,6 @@ public class NormalizeDemo {
 	public static void main(String[] args) throws IOException {
 		
 		final Path path=Paths.get(".");
-		Files.readAttributes(path, type, options)
 		int count=0;
 		System.out.println(path.toString());
 		System.out.println(path.toAbsolutePath());

@@ -4,7 +4,14 @@ import java.util.stream.Stream;
 
 public class AnyMatchDemo {
 	public static void main(String[] args) {
-		Stream<String> infinit=Stream.generate(()->"chimp");
-		infinit.limit(8).forEach(System.out::println);
+		Stream<String>  stream=Stream.of("Nagendra","James","Aaron","Jack");
+		boolean b=stream.anyMatch(s->s.length()>5);
+		System.out.println(b);
+		
+		Stream<String>  names=Stream.generate(()->"Andy");
+		boolean c=names.anyMatch(s->s.length()>5);
+		System.out.println(c);
 	}
 }
+
+

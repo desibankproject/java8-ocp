@@ -14,11 +14,10 @@ public class MainThreadMethod {
 		System.out.println("thread id = "+t.getId());
 		System.out.println("thread name = "+t.getName());
 		//There is two type of thread
-		//deamon and non deamon
+		//daemon and non daemon
 		//main thread is non deamon
 		System.out.println("is main deamon = "+t.isDaemon());
-		//We cannot make main thread deamon
-		
+		//We cannot make main thread daemon
 		///getting state
 		System.out.println("is main thread state = "+t.getState());
 		
