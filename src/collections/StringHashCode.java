@@ -7,6 +7,7 @@ public class StringHashCode {
 		if(str1!=str2) {
 			System.out.println("Ahahha I understand it!!");
 		}
+		boolean t=str2.equals(str1);
 		System.out.println(str1.hashCode());
 		System.out.println(str2.hashCode());
 	}

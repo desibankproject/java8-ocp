@@ -25,5 +25,6 @@ public class ThreadPoolDemo1 {
 		       exe.execute(new Magic("Task4"));
 		       exe.execute(new Magic("Task5"));
 		       exe.execute(new Magic("Task6"));
+		       System.out.println("@(@*(@*@&*@&");
 	}
 }

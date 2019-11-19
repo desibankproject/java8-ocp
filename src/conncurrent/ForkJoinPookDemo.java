@@ -16,7 +16,6 @@ public class ForkJoinPookDemo extends RecursiveAction { // line n1
 	}
 
 	protected void compute() {
-		
 		System.out.println(Thread.currentThread());
 		if ((lstIndex - stIndex) <= THRESHOLD_SIZE) {
 			for (int i = stIndex; i < lstIndex; i++) {
@@ -27,7 +26,9 @@ public class ForkJoinPookDemo extends RecursiveAction { // line n1
 			//System.out.println("cool!"+sum);
 			/*new Sum(data, stIndex + THRESHOLD_SIZE, lstIndex).fork();
 			new Sum(data, stIndex, Math.min(lstIndex, stIndex + THRESHOLD_SIZE)).compute();*/
-		
+			//int middle=stIndex+(lstIndex-stIndex)/2;
+			//ForkJoinPookDemo t1=new ForkJoinPookDemo(data, middle, lstIndex);
+			//ForkJoinPookDemo t2=new ForkJoinPookDemo(data, stIndex, middle);
 			ForkJoinPookDemo t1=new ForkJoinPookDemo(data, stIndex + THRESHOLD_SIZE, lstIndex);
 			ForkJoinPookDemo t2=new ForkJoinPookDemo(data, stIndex, Math.min(lstIndex, stIndex + THRESHOLD_SIZE));
 			/*t1.fork();

@@ -20,7 +20,6 @@ public class MainThreadMethod {
 		//We cannot make main thread daemon
 		///getting state
 		System.out.println("is main thread state = "+t.getState());
-		
 		t.setName("nagendra");
 		System.out.println("now main thread name is  = "+t.getName());
 		
