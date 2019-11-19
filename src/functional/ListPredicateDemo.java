@@ -9,6 +9,7 @@ public class ListPredicateDemo {
 	public static void main(String[] args) {
 		
 		List<String> lista=new ArrayList<String>();
+		
 		lista.add("Nagendra");
 		lista.add("Mango");
 		lista.add("Xray");
@@ -18,7 +19,14 @@ public class ListPredicateDemo {
 		lista.add("Apple");
 		
 		//Predicate<String> pred=t-> t.contains("a");
-		lista.removeIf(k-> k.contains("a"));
+		
+		/*lista.removeIf(new Predicate<String>() {
+			@Override
+			public boolean test(String t) {
+				return t.contains("a");
+			}
+		});*/
+		lista.removeIf(t-> t.contains("a"));
 		System.out.println(lista);
 				
 	}

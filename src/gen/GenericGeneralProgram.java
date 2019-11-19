@@ -37,7 +37,9 @@ public class GenericGeneralProgram {
     //This is caller lower bound
     public static void showRooms(List<Vehicle> vehicles){ //List<Audi> audis;
             vehicles.add(null); //
-           // vehicles.add(new Audi());
+            vehicles.add(new Audi());
+            vehicles.add(new BMW());
+            //vehicles.add(new Object());
             //This is not readonly
             for(Object object:vehicles){
                 System.out.println(object);

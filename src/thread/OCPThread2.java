@@ -25,11 +25,14 @@ class IStopPlease implements  Runnable {
 
 public class OCPThread2 {
 	public static void main(String[] args) {
+		//Creating task1
 		IGoAhead goAhead=new IGoAhead();
+		//creating
 		IStopPlease stopPlease=new IStopPlease();
+		//creating thread object and attaching task to it
 		Thread thread1=new Thread(goAhead);
 		Thread thread2=new Thread(stopPlease);
-		thread1.start();
+		thread1.start(); //starting thread
 		thread2.start();
 		
 		/*

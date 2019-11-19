@@ -5,7 +5,7 @@ import java.util.stream.Stream;
 
 public class MinExample {
 	public static void main(String[] args) {
-		Stream<String> s=Stream.of("monkey","gorilla","bonobo");
+		Stream<String> s=Stream.of("monkey","gorilla","bonob");
 		//Comparator<String>  comp=(s1,s2)-> 
 		//min, max , sort
 		Optional<String> optional=s.min((s1,s2)->s1.length()-s2.length());//Comparator
@@ -14,6 +14,7 @@ public class MinExample {
 		}else {
 			
 		}
-		optional.ifPresent(t->System.out.println(t));
+		/*optional.ifPresent(t->System.out.println(t));*/
+		optional.ifPresent(System.out::println);
 	}
 }

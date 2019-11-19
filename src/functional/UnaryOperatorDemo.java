@@ -12,6 +12,9 @@ public class UnaryOperatorDemo {
 					System.out.println("@(@(@*(@*@");
 					return "Mr " +t;
 				};
+				
+				String toe=tt.apply("Nagendra");
+				
 	}
 	
 }

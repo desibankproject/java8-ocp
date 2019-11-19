@@ -1,5 +1,6 @@
 package thread;
 
+//GoAhead is a Thread ? yes
 class GoAhead extends Thread {
 	
 	public GoAhead(String cname) {

@@ -12,12 +12,16 @@ class Amogh{
 
 public class InstanceMethodReferenceOfAnyType {
 	public static void main(String[] args) {
+		
 		Amogh amogh=new Amogh();
-		/*Sum sum=(x,y)->amogh.add(x,y);*/
+		
+//		Sum sum=(int x, int y) -> amogh.add(x,y);
+		Sum sum=amogh::add;
+		
 	/*	Sum sum=(x,y)->{
 			return amogh.add(x,y);
 		};*/
-		Sum sum=amogh::add; //System.out::println
+		//Sum sum=amogh::add; //System.out::println
 		
 	}
 }

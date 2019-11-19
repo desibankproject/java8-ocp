@@ -8,6 +8,17 @@ interface EntityPrint<T> {
 
 public class InstanceMethodReferenceParticularObject {
 			public static void main(String[] args) {
+				
+/*				EntityPrint<Customer> c=(Customer t) -> {
+						 t.show();	
+					}
+*/
+				
+ 		/*EntityPrint<Customer> c=(Customer t) -> t.show();	*/
+				
+		  EntityPrint<Customer> c=Customer::show;	
+
+				
 		/*
 		 * EntityPrint<Customer> entityPrint=(Customer c)->{ c.show(); };
 		 */

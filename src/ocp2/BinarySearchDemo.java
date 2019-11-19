@@ -10,6 +10,8 @@ public class BinarySearchDemo {
 		Comparator<Integer> c = (o1, o2) -> o1-o2;
 		List<Integer> list = Arrays.asList(5, 4, 7, 1);
 		Collections.sort(list, c);
-		System.out.println(Collections.binarySearch(list, 3));
+		System.out.println(Collections.binarySearch(list, 8));
+		int a[]= {1,4,5,7};
+		System.out.println(Arrays.binarySearch(a,8));
 	}
 }
