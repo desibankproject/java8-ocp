@@ -1,5 +1,7 @@
 package thread;
 
+import java.util.stream.Stream;
+
 //IGoAhead is thread ??? no
 //IGoAhead is task ?? yes 
 class DIGoAhead implements   Runnable {
@@ -14,6 +16,7 @@ class DIGoAhead implements   Runnable {
 //IGoAhead is thread ??? no
 //IGoAhead is task ?? yes 
 class DIStopPlease implements  Runnable {
+	Stream<T>
 	@Override
 	public void run() {
 		for(int j=1;j<=1000;j++) {
