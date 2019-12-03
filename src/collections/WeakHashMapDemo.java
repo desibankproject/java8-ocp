@@ -1,5 +1,6 @@
 package collections;
 
+import java.util.Map;
 import java.util.WeakHashMap;
 
 public class WeakHashMapDemo {
@@ -25,16 +26,16 @@ public class WeakHashMapDemo {
 		Biscuit biscuit5=new Biscuit(5,"ParleG","salty","open the package and eat");
 		Biscuit biscuit6=new Biscuit(6,"ParleG","sweet","open the package and eat");
 		
-		WeakHashMap<Biscuit,String> whm=new WeakHashMap<Biscuit,String>();
+		Map<Biscuit,String> whm=new WeakHashMap<Biscuit,String>();
 		whm.put(biscuit1, "1000");
 		whm.put(biscuit2, "2000");
 		whm.put(biscuit3, "3000");
 		whm.put(biscuit4, "4000");
 		whm.put(biscuit5, "5000");
 		whm.put(biscuit6, "6000");
-		System.out.println("Size of map is  = "+whm.size());
+		System.out.println("Size of map is  = "+whm.size()); //size =6
 		
-		biscuit1=biscuit6;
+		biscuit1=null;
 		biscuit2=null;
 		//Call GC
 		System.gc();

@@ -8,7 +8,6 @@ public class CopyOnWriteArraySetDemo {
 	
 	public static void main(String[] args) {
 		
-		Stream<T>
 		 // create object of CopyOnWriteArrayList 
 	    Set<Integer> arraySet   = new CopyOnWriteArraySet<Integer>(); 
 	    // Add elements 

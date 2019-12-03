@@ -16,9 +16,9 @@ public class TreeMapSortByVendor {
 		Mobile mobile5=new Mobile("balck berry",2000,"blue");
 		Mobile mobile6=new Mobile("spice",1233,"cyan");
 		
-		SortMobileByVendor byVendor=new SortMobileByVendor();
+		SortMobileByVendor byVendorDesc=new SortMobileByVendor();
 		
-		Map<Mobile,String> mobiles=new TreeMap<Mobile,String>((m1,m2)->m2.getVendor().compareTo(m1.getVendor()));
+		Map<Mobile,String> mobiles=new TreeMap<Mobile,String>(byVendorDesc);
 		mobiles.put(mobile1,"Abc Store");
 		mobiles.put(mobile2,"Abc Store");
 		mobiles.put(mobile3,"Abc Store");

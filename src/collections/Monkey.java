@@ -83,7 +83,8 @@ public class Monkey implements Comparable<Monkey> {
 
 	@Override
 	public int compareTo(Monkey o) {
-		return color.compareTo(o.getColor());
+		return this.price-o.price;
 	}
+
 
 }

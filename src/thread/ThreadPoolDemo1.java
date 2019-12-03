@@ -3,6 +3,8 @@ package thread;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
+
+//Magic is task ?? yes yes yes
 class Magic implements Runnable{
 	private String name;
 	Magic(String name){
@@ -18,6 +20,7 @@ class Magic implements Runnable{
 
 public class ThreadPoolDemo1 {
 	public static void main(String[] args) {
+		       
 		       Executor exe=  Executors.newFixedThreadPool(3);
 		       exe.execute(new Magic("Task1"));
 		       exe.execute(new Magic("Task2"));

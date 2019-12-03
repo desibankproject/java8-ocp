@@ -39,7 +39,7 @@ public class CyclicBarrierDemo {
     public static void main(String args[]) {
         //creating CyclicBarrier with 3 parties i.e. 3 Threads needs to call await()
     	 //This task will be executed once all thread reaches barrier
-    	final CyclicBarrier cb = new CyclicBarrier(3, () -> System.out.println("All parties are arrived at barrier, lets play"));
+    	final CyclicBarrier cb = new CyclicBarrier(3);
         //starting each of thread
         Thread t1 = new Thread(new Task(cb), "Thread 1");
         Thread t2 = new Thread(new Task(cb), "Thread 2");
@@ -47,6 +47,9 @@ public class CyclicBarrierDemo {
         t1.start();
         t2.start();
         t3.start();
+        
+        System.out.println("@(@(@END(@(@(");
+        
      
     }
 }

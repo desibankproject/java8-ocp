@@ -20,14 +20,16 @@ class Jacker implements Callable<Integer> {
 public class CallablePoolDemo {
 	 public static void main(String[] args) throws InterruptedException, ExecutionException {
 		 ExecutorService service=Executors.newFixedThreadPool(3);
-		 List< Future<Integer>> resutls=new ArrayList<Future<Integer>>();
-		 resutls.add(service.submit(()->new Random().nextInt(100)));
-		 resutls.add(service.submit(()->new Random().nextInt(100)));
-		 resutls.add(service.submit(()->new Random().nextInt(100)));
-		 resutls.add(service.submit(()->new Random().nextInt(100)));
-		 resutls.add(service.submit(()->new Random().nextInt(100)));
-		 resutls.add(service.submit(()->new Random().nextInt(100)));
-		 resutls.add(service.submit(()->new Random().nextInt(100)));
+		 List<Future<Integer>> resutls=new ArrayList<Future<Integer>>();
+		 
+		 resutls.add(service.submit(new Jacker()));
+		 resutls.add(service.submit(new Jacker()));
+		 resutls.add(service.submit(new Jacker()));
+		 resutls.add(service.submit(new Jacker()));
+		 resutls.add(service.submit(new Jacker()));
+		 resutls.add(service.submit(new Jacker()));
+		 resutls.add(service.submit(new Jacker()));
+		 
 		 int sum=0;
 		 for(Future<Integer> result:resutls) {
 			 sum=sum+result.get();

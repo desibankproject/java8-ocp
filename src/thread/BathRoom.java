@@ -12,16 +12,23 @@ public class BathRoom {
 		System.out.println("__#(#(#((foo __________");
 	}
 	
-	synchronized  public static void takeBath(String name, String song) {
-		System.out.println("Hey I am = " + name);
-		for (int i = 0; i < 5; i++) {
-			System.out.println(name + ": I am singing ...." + song);
-			try {
-				Thread.sleep(1000);
-			} catch (InterruptedException e) {
-				e.printStackTrace();
+
+	public synchronized static void zee() {
+		
+	}
+	
+  public  static void takeBath(String name, String song) {
+	  synchronized(BathRoom.class) {
+		  System.out.println("Hey I am = " + name);
+		  for (int i = 0; i < 5; i++) {
+			  System.out.println(name + ": I am singing ...." + song);
+			  try {
+				  Thread.sleep(1000);
+			  } catch (InterruptedException e) {
+				  e.printStackTrace();
 			}
 		}
+	  }
 	}
 	
 	

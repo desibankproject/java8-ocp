@@ -32,6 +32,7 @@ public class TreeMapDemo {
 	maps.put("Banana", "NotK");
 	maps.put("Orange", "Sour");
 	maps.put("Papaya", "Lemon");
+	
 	//Accessing TreeSet
 	Set<Map.Entry<String,String>> entries=maps.entrySet();
 	System.out.println("output =");
@@ -39,6 +40,8 @@ public class TreeMapDemo {
 		System.out.print("Key = "+entry.getKey());
 		System.out.println(",Value = "+entry.getValue());
 	}
+	System.out.println("@)@)@)@)@");
+	System.out.println(maps);
   }  
 }	
 	
