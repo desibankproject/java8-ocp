@@ -1,9 +1,11 @@
 package thread;
 
+import java.util.concurrent.ConcurrentLinkedDeque;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
 class OMagic implements Runnable{
+	
 	private String name;
 	OMagic(String name){
 		this.name=name;
@@ -18,6 +20,7 @@ class OMagic implements Runnable{
 
 public class ThreadPoolDemo3 {
 	public static void main(String[] args) {
+		ConcurrentLinkedDeque<E>
 		       Executor exe=  Executors.newSingleThreadExecutor();
 		       exe.execute(new OMagic("Task1"));
 		       exe.execute(new OMagic("Task2"));

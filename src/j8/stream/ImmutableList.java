@@ -12,5 +12,7 @@ public class ImmutableList {
 		
 		Stream<String> newStream=namesList.stream().map(t->"Hey! "+t);
 		newStream.forEach(System.out::println);
+		Runtime.getRuntime().availableProcessors();
+	
 	}
 }

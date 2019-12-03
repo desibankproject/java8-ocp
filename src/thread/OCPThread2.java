@@ -35,11 +35,11 @@ public class OCPThread2 {
 		thread1.start(); //starting thread
 		thread2.start();
 		
-		Thread thread3=new Thread(() -> {
-			for(int j=1;j<=100;j++) {
-				   System.out.println(Thread.currentThread().getName()+ " Lamda expression  stop crying  "+j );	  
-				}
-			});
+		/*
+		 * Thread thread3=new Thread(() -> { for(int j=1;j<=100;j++) {
+		 * System.out.println(Thread.currentThread().getName()+
+		 * " Lamda expression  stop crying  "+j ); } });
+		 */
 		
 		for(int x=1;x<=100;x++) {
 			System.out.println("Jmmmmmmmmmmmmhmmm8383838373 "+x);

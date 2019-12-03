@@ -22,6 +22,9 @@ public class HashSetStringDemo {
 		System.out.println("xxxx = "+b);
 		sets.add("AM");
 		sets.add("SK");
+		b=sets.add("PK");
+		System.out.println("xxxx = "+b);
+		
 		for(String str:sets) {
 			System.out.println(str);
 		}

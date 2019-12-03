@@ -32,14 +32,12 @@ public class Dog implements Comparable<Dog>{
 	
 	
 	
+	
+
+
 	@Override
 	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + ((color == null) ? 0 : color.hashCode());
-		result = prime * result + ((name == null) ? 0 : name.hashCode());
-		result = prime * result + price;
-		return result;
+		return 100;
 	}
 
 	@Override
@@ -98,12 +96,6 @@ public class Dog implements Comparable<Dog>{
 	public void setPrice(int price) {
 		this.price = price;
 	}
-	
-
-
-
-	
-	
 	
 
 }

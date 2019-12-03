@@ -11,4 +11,10 @@ public static void main(String[] args) {
 	System.out.println(path4.relativize(path3));
 	System.out.println(path3);
 }
+     public static void main(String[] args) {
+    	 Path path1 = Paths.get("fish.txt");
+    	 Path path2 = Paths.get("birds.txt");
+    	 System.out.println(path1.relativize(path2)); // ..\birds.txt
+    	 System.out.println(path2.relativize(path1)); //..\fish.txt
+	}
 }

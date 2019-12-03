@@ -13,6 +13,10 @@ public class HashCodeDemo {
 		Dog dog1=new Dog();
 		Dog dog2=new Dog();
 		System.out.println(dog1.hashCode());
+		System.out.println(dog1.hashCode());
+		System.out.println(dog1.hashCode());
+		System.out.println(dog1.hashCode());
+		System.out.println(dog1.hashCode());
 		System.out.println(dog2.hashCode());
 	}
 }
